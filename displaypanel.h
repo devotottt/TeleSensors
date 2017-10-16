@@ -24,7 +24,6 @@ public:
     bool connectToPort(const PortSettings& portSetting, QString& errStrs);
     void disconnectFromPort();
     static QString getStringPortError(QSerialPort::SerialPortError);
-    void updateWidgetValues();
     void setDeviceAddress(int deviceAddress);
 
 public slots:
