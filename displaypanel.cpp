@@ -110,6 +110,3 @@ void DisplayPanel::processError(const QString &s){
 void DisplayPanel::processTimeout(const QString &s){
     ui->statusLabel->setText(s);
 }
-void DisplayPanel::updateWidgetValues(){
-
-}
