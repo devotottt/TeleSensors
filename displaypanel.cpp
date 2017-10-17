@@ -69,7 +69,6 @@ void DisplayPanel::deleteThread(){
         delete masterThread_;
     this->setEnabled(false);
     ui->statusLabel->setText(QString("Обмен данными не запущен"));
-    updateWidgetValues();
     isConnected_ = false;
     if(serialPort_ != nullptr)
         delete serialPort_;
