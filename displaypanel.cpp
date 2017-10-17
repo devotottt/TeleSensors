@@ -95,7 +95,9 @@ QString DisplayPanel::getStringPortError(QSerialPort::SerialPortError error){
     return outStringError;
 }
 void DisplayPanel::setDeviceAddress(int deviceAddress){
+    mutex_.lock();
     deviceAddress_ = deviceAddress;
+    mutex_.unlock();
 }
 void DisplayPanel::showResponse(QVector<int> responseVector){
     ui->statusLabel->setText(QString("Идёт обмен данными..."));
